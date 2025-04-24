@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Checker</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Weather App</h1>
+
+        <div class="input-section">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" placeholder="e.g., Manila">
+            <button id="get-weather-btn">Get Weather</button>
+        </div>
+
+        <div class="weather-result" id="weather-result" style="display: none;">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon" />
+            <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+            <p><strong>Weather:</strong> <span id="description"></span></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> km/h</p>
+        </div>
+
+        <div class="error-message" id="error-message" style="display: none;">
+            <p id="error-text">Unable to fetch weather data.</p>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
